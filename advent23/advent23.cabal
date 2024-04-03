@@ -1,0 +1,93 @@
+cabal-version:      3.4
+name:               advent23
+version:            0.1.0.0
+synopsis:           Solutions to Advent of Code 2023.
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             Mariano Casco
+maintainer:         mariano@mailbox.org
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+common days
+    import:           warnings
+    build-depends:    base ^>=4.19.0.0,
+                      text ^>=2.1,
+                      attoparsec ^>=0.14,
+                      containers ^>=0.6,
+                      unordered-containers ^>=0.2,
+                      hashable ^>=1.4
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable day01
+    import:  days
+    main-is: day01.hs
+
+executable day02
+    import:  days
+    main-is: day02.hs
+
+executable day03
+    import:  days
+    main-is: day03.hs
+
+executable day04
+    import:  days
+    main-is: day04.hs
+    build-depends: vector ^>=0.13
+
+executable day05
+    import:  days
+    main-is: day05.hs
+
+executable day06
+    import:  days
+    main-is: day06.hs
+
+executable day07
+    import:  days
+    main-is: day07.hs
+
+executable day08
+    import:  days
+    main-is: day08.hs
+
+executable day09
+    import:  days
+    main-is: day09.hs
+
+executable day10
+    import:  days
+    main-is: day10.hs
+
+executable day11
+    import:  days
+    main-is: day11.hs
+
+executable day12
+    import:  days
+    main-is: day12.hs
+    ghc-options: -O3
+
+executable day13
+    import:  days
+    main-is: day13.hs
+
+executable day14
+    import:  days
+    main-is: day14.hs
+
+executable day15
+    import:  days
+    main-is: day15.hs
+
+executable day16
+    import:  days
+    main-is: day16.hs

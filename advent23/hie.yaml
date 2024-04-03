@@ -1,0 +1,8 @@
+cradle:
+  cabal:
+    - path: "./src/day01.hs"
+      component: "day01"
+    - path: "./src/day02.hs"
+      component: "day02"
+    - path: "./src/day03.hs"
+      component: "day03"
